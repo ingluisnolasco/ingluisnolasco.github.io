@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>CrediPlus</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <style media="screen">
+    body {
+      margin-top: 70px;
+      background-color: #1d99f3;
+      color: white;
+      text-align: center;
+    }
+    </style>
+
+    <header>
+      <nav class="bg-dark navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="favicon.ico" alt="Logo" style="width:32px;height:32px;">
+            <span><strong>Inicio</strong></span>
+          </a>
+            <div class="float-right">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#register">Registrar</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">
+                <img src="img/login.png" alt="login" style="width:24px;height:24px;">
+                <span>Entrar</span>
+              </button>
+            </div>
+          </div>
+      </nav>
+    </header>
+
+    <section class="container" style="">
+      <img src="img/logo.png" alt="Logo">
+      <h1><strong>CrediPlus</strong><small>.net</small></h1>
+      <p>Verificación de credito en la nube.</p>
+    </section>
+
+    <section class="container">
+      <div class="modal fade" id="login">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="border border-primary modal-content">
+            <!-- Modal Header -->
+            <div class="border border-primary bg-dark modal-header">
+              <h4 class="modal-title">Iniciar Sesión</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="border border-primary bg-secondary modal-body">
+              <div style="margin-top:10px">
+                <input type="email" class="form-control" id="email" placeholder="Correo electrónico" name="email">
+              </div>
+              <div style="margin-top:10px">
+                <input type="password" class="form-control" id="pwd" placeholder="Ingrese contraseña" name="pswd">
+              </div>
+              <div class="float-left form-check" style="margin-top:10px">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember">Mostrar Contraseña</input>
+                </label>
+              </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="border border-primary modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="modal fade" id="register">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="border border-success modal-content">
+            <!-- Modal Header -->
+            <div class="border border-success bg-dark modal-header">
+              <h4 class="modal-title">Crear Cuenta Nueva</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="border border-success bg-secondary modal-body">
+              <div style="margin-top:10px">
+                <input type="text" class="form-control" placeholder="Nombre completo" name="nombre">
+              </div>
+              <div style="margin-top:10px">
+                <input type="email" class="form-control" placeholder="Correo electrónico" name="email">
+              </div>
+              <div style="margin-top:10px">
+                <input type="password" class="form-control" placeholder="Contraseña" name="pswd1">
+              </div>
+              <div style="margin-top:10px">
+                <input type="password" class="form-control" placeholder="Confirma contraseña" name="pswd2">
+              </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="border border-success modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Registrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="fixed-bottom">
+        <span>CrediPlus &copy; 2018 Todos los derechos reservados</span>
+      </div>
+    </footer>
+  </body>
+</html>
