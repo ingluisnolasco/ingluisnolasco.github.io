@@ -1,2 +1,0 @@
-# ingluisnolasco.github.io
-Home
